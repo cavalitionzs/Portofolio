@@ -39,7 +39,7 @@ const Contact = () => {
         to_email: 'chandra.profiles@gmail.com',
         message: form.message
       },
-      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      import.meta.env.VITE_APP_EMAILJS_PUBLIC
     ).then(() =>{
       setIsLoading(false);
       showAlert({
