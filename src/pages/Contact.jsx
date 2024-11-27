@@ -1,4 +1,4 @@
-import React, { useRef, useState, Suspense } from 'react'
+import React, { useState, Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import emailjs from '@emailjs/browser'
 
@@ -39,7 +39,7 @@ const Contact = () => {
         to_email: 'chandra.profiles@gmail.com',
         message: form.message
       },
-      import.meta.env.VITE_APP_EMAILJS_PUBLIC
+      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
     ).then(() =>{
       setIsLoading(false);
       showAlert({
