@@ -24,7 +24,7 @@ const Contact = () => {
   const handleFocus = () => setCurrentAnimation('walk');
   const handleBlur = () => setCurrentAnimation('idle');
 
-  const public_key = lrXPQjsN0LXuqo4H8;
+  const public_key = "lrXPQjsN0LXuqo4H8";
   
   const handleSubmit = (e) => {
     e.preventDefault();
