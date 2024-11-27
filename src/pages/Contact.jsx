@@ -3,13 +3,11 @@ import { Canvas } from '@react-three/fiber'
 import emailjs from '@emailjs/browser'
 
 import Fox from '../models/Fox' 
-// import { Alert, Loader } from "../components";
 import Alert from '../components/Alert'
 import Loader from '../components/Loader'
 import useAlert from '../hooks/useAlert'
 
 const Contact = () => {
-  const formRef = useRef(null);
   const [ form, setForm ] = useState({
     name:'',
     email:'',
@@ -31,7 +29,6 @@ const Contact = () => {
     setIsLoading(true);
     setCurrentAnimation('hit');
 
-    // console.log(import.meta.env.VITE_APP_EMAILJS_SERVICE_ID)
     emailjs.send(
       import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
       import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
@@ -39,7 +36,7 @@ const Contact = () => {
         from_name: form.name,
         to_name: "Chandra Wijaya Kusuma",
         from_email: form.email,
-        to_email: 'chandra@profile@gmail.com',
+        to_email: 'chandra.profiles@gmail.com',
         message: form.message
       },
       import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -85,7 +82,7 @@ const Contact = () => {
             type='text'
             name='name'
             className='input'
-            placeholder='Chandra'
+            placeholder='Your Name'
             required
             value={form.name}
             onChange={handleChange} 
@@ -99,7 +96,7 @@ const Contact = () => {
             type='email'
             name='email'
             className='input'
-            placeholder='chandra.profiles@gmail.com'
+            placeholder='your-email@gmail.com'
             required
             value={form.email}
             onChange={handleChange} 

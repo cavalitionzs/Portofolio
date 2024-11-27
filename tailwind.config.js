@@ -16,7 +16,11 @@ export default {
         },
         blue: {
           500: "#2b77e7"
-        }
+        },
+        gradient:{
+          300: "#9b4de0", // Adjust the color to your desired shade of purple 300
+          600: "#6a1e9c", // Adjust the color to your desired shade of purple 600
+        },
       },
       fontFamily: {
         worksans: ["Work Sans", "sans-serif"],

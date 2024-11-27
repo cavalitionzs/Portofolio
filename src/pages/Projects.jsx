@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
-
 import CTA from "../components/CTA";
 import { projects } from "../constants";
-// import { arrow } from "../assets/icons";
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
+import { arrow } from "../assets/icons";
 
 const Projects = () => {
   return (
@@ -16,11 +14,10 @@ const Projects = () => {
       </h1>
 
       <p className='text-slate-500 mt-2 leading-relaxed'>
-        I've embarked on numerous projects throughout the years, but these are
-        the ones I hold closest to my heart. Many of them are open-source, so if
-        you come across something that piques your interest, feel free to
-        explore the codebase and contribute your ideas for further enhancements.
-        Your collaboration is highly valued!
+        Over the years, I've worked on many projects, but these are the ones I cherish the most. 
+        Many are open-source, so if you find something intriguing, 
+        you're welcome to delve into the code and share your suggestions for improvements. 
+        Your contributions are greatly appreciated!
       </p>
 
       <div className='flex flex-wrap my-20 gap-16'>
@@ -45,13 +42,16 @@ const Projects = () => {
               <div className='mt-5 flex items-center gap-2 font-poppins'>
                 <Link
                   to={project.link}
-                  target='_blank'
                   rel='noopener noreferrer'
                   className='font-semibold text-blue-600'
                 >
                   Live Link
                 </Link>
-                <ArrowRightIcon className='w-4 h-4 object-contain'/>
+                <img
+                  src={arrow}
+                  alt='arrow'
+                  className='w-4 h-4 object-contain'
+                  />
               </div>
             </div>
           </div>

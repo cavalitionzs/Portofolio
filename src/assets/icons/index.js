@@ -4,6 +4,9 @@ import git from './git.svg'
 import github from './github.svg'
 import html from './html.svg'
 import javascript from './javascript.svg'
+import php from './php.svg'
+import ci from './ci.svg'
+import c from './c.svg'
 import mongodb from './mongodb.svg'
 import motion from './motion.svg'
 import mui from './mui.svg'
@@ -34,6 +37,9 @@ export {
     github,
     html,
     javascript,
+    php,
+    ci,
+    c,
     mongodb,
     motion,
     mui,
