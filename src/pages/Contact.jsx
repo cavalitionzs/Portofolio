@@ -23,6 +23,8 @@ const Contact = () => {
 
   const handleFocus = () => setCurrentAnimation('walk');
   const handleBlur = () => setCurrentAnimation('idle');
+
+  const public_key = lrXPQjsN0LXuqo4H8;
   
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -39,7 +41,7 @@ const Contact = () => {
         to_email: 'chandra.profiles@gmail.com',
         message: form.message
       },
-      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      public_key
     ).then(() =>{
       setIsLoading(false);
       showAlert({
