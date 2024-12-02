@@ -1,4 +1,4 @@
-import logo from '../assets/images/logo.png'
+import { atma_logo, kraken_logo } from '../assets/images'
 import refine from '../assets/images/refine.ico'
 import {
     contact,
@@ -91,15 +91,28 @@ export const skills = [
     },
 ];
 
-const company_name = 'Atma Jaya Yogyakarta University';
+const company_name = [
+    'Atma Jaya Yogyakarta University',
+    'PT Kraken Ventura Indonesia'
+];
 
 export const experiences = [
     {
+        title: "Backend Developer",
+        company_name: company_name[1],
+        icon: kraken_logo,
+        iconBg: "#8c8c8c",
+        date: "Aug 2024 - Present",
+        points: [
+            "System Development and Integration for one of the company's needs",
+        ],
+    },
+    {
         title: "Assistant Lecturer",
-        company_name: company_name,
-        icon: logo,
+        company_name: company_name[0],
+        icon: atma_logo,
         iconBg: "#a2d2ff",
-        date: "Feb 2024 - Present",
+        date: "Feb 2024 - Jun 2024",
         points: [
             "Teaching University students about Web-based Information Systems",
             "We're Introducing University students to React typescript and Next.js, which are React frameworks",
@@ -107,8 +120,8 @@ export const experiences = [
     },
     {
         title: "Assistant Lecturer",
-        company_name: company_name,
-        icon: logo,
+        company_name: company_name[0],
+        icon: atma_logo,
         iconBg: "#a2d2ff",
         date: "Feb 2023 - Jun 2023",
         points: [
