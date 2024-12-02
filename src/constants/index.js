@@ -115,7 +115,7 @@ export const experiences = [
         date: "Feb 2024 - Jun 2024",
         points: [
             "Teaching University students about Web-based Information Systems",
-            "We're Introducing University students to React typescript and Next.js, which are React frameworks",
+            "We're Introducing University students to React typescript and Next.js",
         ],
     },
     {
