@@ -98,7 +98,7 @@ const company_name = [
 
 export const experiences = [
     {
-        title: "Backend Developer",
+        title: "Internship - Backend Developer",
         company_name: company_name[1],
         icon: kraken_logo,
         iconBg: "#8c8c8c",
