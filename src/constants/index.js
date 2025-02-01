@@ -102,7 +102,7 @@ export const experiences = [
         company_name: company_name[1],
         icon: kraken_logo,
         iconBg: "#8c8c8c",
-        date: "Aug 2024 - Present",
+        date: "Aug 2024 - Jan 2025",
         points: [
             "System Development and Integration for one of the company's needs",
         ],
